@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fancy SaIlor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+    <link rel="stylesheet" href="./dist/reset.css">
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+<header>
+    <div class="burger-block">
+        <div class="burger-container">
+            <div id="burger">
+                <div class="bar topBar"></div>
+                <div class="bar btmBar"></div>
+            </div>
+        </div>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">HOME</a></li>
+            <li class="menu-item"><a href="#about-us">ABOUT</a></li>
+            <li class="menu-item"><a href="#">TEAM</a></li>
+            <li class="menu-item"><a href="#booking">BOOKING</a></li>
+            <li class="menu-item"><a href="#">MENU</a></li>
+            <li class="menu-item"><a href="#">GALERIE</a></li>
+            <li class="menu-item"><a href="#">EVENTS</a></li>
+            <li class="menu-item"><a href="#contact">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <a href="#">HOME</a>
+        <a href="#about-us">ABOUT</a>
+        <a href="#">TEAM</a>
+        <a href="#booking">BOOKING</a>
+        <div class="logo-header"></div>
+        <a href="#">MENU</a>
+        <a href="#">GALERIE</a>
+        <a href="#">EVENTS</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+    <div class="menu-2">
+        <p class="info-2">RESTAURANT</p>
+        <p class="menu-name">Fancy SaIlor</p>
+        <div class="center">
+            <hr class="line">
+        </div>
+        <div class="buttons">
+            <div class="buttons-between">
+                <a href="#booking" class="btn-colored">BOOK TABLE</a>
+                <a href="#" class="btn-outline">EXPLORE</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="about-us" class="about-us">
+        <div class="block">
+            <div class="text-view">
+                <h1>about us</h1>
+                <div class="center">
+                    <hr class="line">
+                </div><br>
+                <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at<br> velit maximus, molestie
+                    est a, tempor magna.</strong><br>
+                <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                    ligula. Sed dictum,
+                    enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                    Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+            </div>
+            <div class="image-text"></div>
+        </div>
+    </section>
+    <section id="booking" class="booking">
+        <div class="block">
+            <div class="image-text-2"></div>
+            <div class="text-view">
+                <h1>book a table</h1>
+                <div class="center">
+                    <hr class="line">
+                </div><br>
+                <form action="#">
+                    <div>
+                        <input id="Name" type="text" name="Name" class="form-control" placeholder="Name">
+                        <input id="Email" type="text" name="Email" class="form-control" placeholder="Email">
+                    </div><br>
+                    <div>
+                        <input id="Phone" type="text" name="Phone" class="form-control" placeholder="Phone">
+                        <select id="People" name="People">
+                            <option value="" disabled selected>People</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <input id="Date" type="text" name="Date" class="form-control" placeholder="Date (mm/dd)">
+                        <select id="Time" name="Time">
+                            <option value="" disabled selected>Time</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div><br>
+                    <button class="btn-colored" onclick="notify('Booking succesfull'); return false;">BOOK
+                        NOW</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="workdays">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM, Phone: +40 729 131 637/+40 726 458 782</div>
+    <section id="specialities" class="specialities">
+        <div class="info">specialties</div>
+        <div class="block">
+            <div class="image-text-3"></div>
+            <div class="text-view">
+                <h1>chocolate pancakes</h1>
+                <div class="center">
+                    <hr class="line">
+                </div><br>
+                <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at<br> velit maximus, molestie
+                    est a, tempor magna.</strong><br>
+                <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                    ligula. Sed dictum,
+                    enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem.
+                    Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="text-view">
+            <h1>CONTACT</h1>
+            <div class="center">
+                <hr class="line">
+            </div><br>
+            <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at<br> velit maximus, molestie
+                est a, tempor magna.</strong><br>
+        </div>
+        <form action="#">
+            <div>
+                <input id="NameContact" type="text" name="Name" class="form-control" placeholder="Name">
+                <input id="EmailContact" type="text" name="Email" class="form-control" placeholder="Email">
+                <input id="PhoneContact" type="text" name="Phone" class="form-control" placeholder="Phone">
+            </div><br>
+            <textarea id="Message" name="Message" placeholder="Message"></textarea><br><br>
+            <button class="btn-colored" onclick="notify('Message sended'); return false">SEND
+                MESSAGE</button><br><br>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>© Copyright <b>Fancy Sailor</b> 2014</p>
+</footer>
+<script>
+    const
+        header = document.querySelector(".burger-block");
+    header.addEventListener("click", function () {
+        header.classList.toggle("menu-opened");
+    });
+    function scrollToAnchor(anchorId) {
+        const element = document.getElementById(anchorId);
+        if (element) {
+            const top = element.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+                top,
+                behavior: "smooth",
+            });
+        }
+    }
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const anchorId = link.getAttribute("href").substring(1);
+            scrollToAnchor(anchorId);
+        });
+    });
+    function notify(message) {
+        try {
+            const notification = document.createElement("div");
+            notification.classList.add("notification");
+            notification.innerText = message;
+            document.body.appendChild(notification);
+            setTimeout(function () {
+                document.body.removeChild(notification);
+            }, 700);
+        } catch (e) {
+            alert(e);
+        }
+    }
+
+
+</script>
+</body>
+
+</html>
